@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:basic_flutter/model/item.dart';
 
-class ShoppingForm extends StatefulWidget {
-  const ShoppingForm({super.key, this.data, required this.onDataReceived});
+class WisataForm extends StatefulWidget {
+  const WisataForm({super.key, this.data, required this.onDataReceived});
 
   final Item? data;
   final Function(Item) onDataReceived;
 
   @override
-  State<ShoppingForm> createState() => _ShoppingFormState();
+  State<WisataForm> createState() => _WisataFormState();
 }
 
-class _ShoppingFormState extends State<ShoppingForm> {
+class _WisataFormState extends State<WisataForm> {
   final nameController = TextEditingController();
   final descController = TextEditingController();
   final imageController = TextEditingController();

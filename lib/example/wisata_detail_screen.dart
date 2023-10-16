@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:basic_flutter/example/wisata_form.dart';
 import 'package:basic_flutter/model/item.dart';
 
-class ShoppingDetailScreen extends StatefulWidget {
-  const ShoppingDetailScreen(
+class WisataDetailScreen extends StatefulWidget {
+  const WisataDetailScreen(
       {super.key, required this.data, required this.onDataReceived});
 
   final Item data;
   final Function(Item) onDataReceived;
 
   @override
-  State<ShoppingDetailScreen> createState() => _ShoppingDetailScreenState();
+  State<WisataDetailScreen> createState() => _WisataDetailScreenState();
 }
 
-class _ShoppingDetailScreenState extends State<ShoppingDetailScreen> {
+class _WisataDetailScreenState extends State<WisataDetailScreen> {
   Item? data;
 
   @override
@@ -71,7 +71,7 @@ class _ShoppingDetailScreenState extends State<ShoppingDetailScreen> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     builder: (context) {
-                      return ShoppingForm(
+                      return WisataForm(
                         data: data,
                         onDataReceived: (data) {
                           setState(() {

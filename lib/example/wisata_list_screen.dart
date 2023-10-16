@@ -66,7 +66,7 @@ class _WisataListScreenState extends State<WisataListScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => ShoppingDetailScreen(
+                          builder: (context) => WisataDetailScreen(
                             data: item,
                             onDataReceived: (data) {
                               setState(() {
@@ -94,7 +94,7 @@ class _WisataListScreenState extends State<WisataListScreen> {
               borderRadius: BorderRadius.circular(8),
             ),
             builder: (context) {
-              return ShoppingForm(onDataReceived: (data) {
+              return WisataForm(onDataReceived: (data) {
                 setState(() {
                   shopItems.add(data);
                 });
