@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
       const Duration(seconds: 3),
           () {
         Navigator.pushReplacementNamed(context, '/wisata');
-
+        Navigator.pushNamedAndRemoveUntil(context, '/wisata', (route) => false);
       },
     );
   }
